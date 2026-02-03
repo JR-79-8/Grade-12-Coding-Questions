@@ -1,0 +1,25 @@
+import sys
+class Wallet:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def get_balance(self):
+        return self.__balance
+
+    def set_balance(self, add_balance):
+        if add_balance+self.__balance > 0:
+            self.__balance = self.__balance + add_balance
+        else:
+            print("invalid balance")
+            sys.exit()
+
+    def display(self):
+        print(f"You have ${self.__balance}")
+
+
+Wallet1= Wallet(100)
+
+Wallet1.set_balance(50)
+Wallet1.set_balance(-149)
+
+Wallet1.display()
