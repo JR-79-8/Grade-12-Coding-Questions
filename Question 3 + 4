@@ -1,0 +1,12 @@
+class Instrument:
+
+    def play(self):
+        print("music")
+
+class Guitar(Instrument):
+    def tune(self):
+        print("tuning complete")
+
+Guitar = Guitar()
+Guitar.play()
+Guitar.tune()
