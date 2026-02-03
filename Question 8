@@ -1,0 +1,13 @@
+class GameCharacter:
+    def take_turn(self):
+        print("Move")
+
+class Hero(GameCharacter):
+    def take_turn(self):
+        print("Jump")
+    def attack(self):
+        print("Attacking")
+
+class Wizard(Hero):
+    def attack(self):
+        print("Using Spells")
