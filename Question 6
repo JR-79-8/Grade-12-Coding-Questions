@@ -1,0 +1,14 @@
+class Transport:
+    def move():
+        print("Moving")
+
+class Bus(Transport):
+    def move():
+        print("Taking the bus")
+
+class Train(Transport):
+    def move():
+        print("Taking the train")
+
+Bus.move()
+Train.move()
