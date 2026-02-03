@@ -1,0 +1,30 @@
+class Movie:
+    def __init__(self, title, rating):
+        self.__title = title
+        self.__rating = rating
+
+    def get_title(self):
+        return self.__title
+
+    def get_rating(self):
+        return self.__rating
+
+    def set_rating(self, new_rating):
+        self.__rating = new_rating
+
+    def set_title(self, new_title):
+        self.__title = new_title
+
+    def display(self):
+        print(f"The movie is {self.__title} and it has a {self.__rating} star rating.")
+
+
+Movie1 = Movie("Home Alone", 4)
+Movie2 = Movie("Home Alone 2", 5)
+
+Movie1.set_rating(3)
+
+Movie2.set_title("Home Alone 3")
+
+Movie1.display()
+Movie2.display()
