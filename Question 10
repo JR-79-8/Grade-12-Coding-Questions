@@ -1,0 +1,27 @@
+class Vehicle:
+    def __init__(self, licence_plate, model):
+        self.__licence_plate = licence_plate
+        self.__model = model
+
+    def get_licence(self):
+        return self.__licence_plate
+    
+    def get_model(self):
+        return self.__model
+
+    def set_licence(self, newlicence):
+        self.__licence_plate = newlicence
+        
+    def set_model(self, newmodel):
+        self.__model = newmodel
+    
+    def move(self):
+        print("Moving Vehicle")
+
+class Car(Vehicle):
+    def move(self):
+        print("Driving a car")
+        
+class Motercycle(Vehicle):
+    def move(self):
+        print("Riding a Motercycle")
